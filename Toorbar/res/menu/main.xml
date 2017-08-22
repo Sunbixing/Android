@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.rise.MainActivity" >
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_drawer_home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/menu"
+                android:icon="@drawable/ic_notifications"
+                android:title="@string/menu"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:id="@+id/set"
+                android:icon="@drawable/ic_menu_more_overflow"
+                android:title="@string/set"
+                app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+
+</menu>

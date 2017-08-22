@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/layoutupdate"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/updatetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_edit"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutupdate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutupdate" >
+
+        <ImageView
+            android:id="@+id/updateimg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher" />
+
+        <EditText
+            android:id="@+id/updatetit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/updateimg"
+            android:background="@color/blue"
+            android:hint=""
+            android:textColor="#000"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/updatecontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/updatetit"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/updateimg"
+            android:background="@color/blue"
+            android:hint=""
+            android:textColor="#777"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/updatecomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/blue"
+            android:hint=""
+            android:singleLine="true"
+            android:textColor="#777"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/layoutupdate2"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_button_style"
+        android:text="@string/app_finish"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp" />
+
+</RelativeLayout>
